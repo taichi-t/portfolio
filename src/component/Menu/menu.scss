@@ -1,0 +1,177 @@
+.menu-button {
+  /* This just resets the styles of our unordered list that makes our hamburger/hotdog icon */
+  ul {
+    list-style: none;
+    padding: 0;
+  }
+
+  a {
+    color: inherit;
+  }
+
+  /* Styles for the menu button */
+  .menu-btn {
+    background-color: #ffc41c;
+    border-radius: 50%;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.16);
+    cursor: pointer;
+    height: 56px;
+    right: 24px;
+    position: fixed;
+    top: 24px;
+    width: 56px;
+    z-index: 999;
+  }
+
+  .link,
+  .sp {
+    position: relative;
+    display: inline-block;
+    text-decoration: none;
+  }
+  .link::after,
+  .sp::after {
+    position: absolute;
+    bottom: -4px;
+    left: 0;
+    content: "";
+    width: 100%;
+    height: 2px;
+    background: #fcfcfc;
+    transform: scale(0, 1);
+    transform-origin: center top;
+    transition: transform 0.3s;
+  }
+  .link:hover::after,
+  .sp:hover::after {
+    transform: scale(1, 1);
+  }
+
+  .linkedin {
+    display: inline-block;
+    font-size: 40px;
+    margin-right: 20px;
+  }
+
+  .github {
+    display: inline-block;
+    font-size: 40px;
+    margin-left: 20px;
+  }
+
+  .github:hover,
+  .linkedin:hover {
+    fill: #ffc41c;
+    transition: 0.5s ease-in-out;
+    -webkit-transition: 0.5s ease-in-out;
+  }
+
+  /* Styles for the menu */
+  .menu {
+    cursor: pointer;
+    user-select: none;
+    font-family: "Oswald", sans-serif;
+    bottom: 0;
+    background-color: #0c223f;
+    right: -35%;
+    margin: 0;
+    padding: 32px;
+    position: fixed;
+    top: 0;
+    z-index: 999;
+    width: 35%;
+    transform: translate3d(0, 0, 0);
+    transition: transform 0.2s linear;
+  }
+
+  .link_sns_container {
+    display: flex;
+    position: absolute;
+    flex-direction: column;
+    top: 50%;
+    left: 50%;
+    transform: translateY(-50%) translateX(-50%);
+  }
+
+  .menu > ul {
+    color: #fcfcfc;
+    font-weight: bold;
+    text-align: center;
+    font-size: 2rem;
+  }
+  .menu > ul > li {
+    padding-top: 30px;
+  }
+
+  /* Creating the hamburger/hotdog icon in CSS */
+  .menu-btn li {
+    background-color: #0c223f;
+    bottom: 0;
+    height: 2px;
+    left: 0;
+    margin: auto;
+    position: absolute;
+    right: 0;
+    width: 16px;
+    top: 0;
+    transition: all 0.3s ease-in-out;
+  }
+
+  /* The following two lines set the three lines of our hamburger/hotdog icon apart */
+  .menu-btn li:first-child {
+    transform: translate3d(0, -4px, 0);
+  }
+
+  .menu-btn li:last-child {
+    transform: translate3d(0, 4px, 0);
+  }
+
+  /* We're now in the animation territory. These are the classes you toggle on with our Javascript function. */
+  .menu-btn--on li:first-child {
+    transform: rotate(135deg) translate3d(0, 0, 0);
+  }
+
+  .menu-btn--on li:last-child {
+    transform: rotate(-135deg) translate3d(0, 0, 0);
+  }
+
+  .menu-btn--on li:nth-child(2) {
+    opacity: 0;
+  }
+
+  .menu--open {
+    transform: translate3d(-100%, 0, 0);
+  }
+
+  .sp {
+    display: none;
+  }
+  @media screen and (max-width: 600px) {
+    .menu {
+      right: -40%;
+      width: 40%;
+    }
+
+    .linkedin {
+      width: 100%;
+      display: block;
+      font-size: 40px;
+      margin-right: 0;
+    }
+
+    .github {
+      width: 100%;
+      display: block;
+      font-size: 40px;
+      margin-left: 0;
+      margin-top: 30px;
+    }
+
+    .sp {
+      display: inline-block;
+    }
+    .pc {
+      display: none;
+    }
+  }
+}

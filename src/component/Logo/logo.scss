@@ -1,0 +1,15 @@
+.logo {
+  display: inline-block;
+  width: 50px;
+  position: fixed;
+  z-index: 999;
+  left: 24px;
+  top: 24px;
+  opacity: 0.8;
+  fill: #000000;
+  transition: 0.5s ease-in-out;
+}
+
+.logo:hover {
+  fill: #ffc41c;
+}

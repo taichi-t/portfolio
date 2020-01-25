@@ -1,0 +1,245 @@
+.about {
+  h5 {
+    display: inline-block;
+    font-size: 2rem;
+    font-weight: normal;
+    margin: 0;
+    margin-bottom: 8px;
+  }
+
+  p {
+    margin: 0;
+  }
+
+  margin: 0 16%;
+  padding-bottom: 80px;
+  font-family: "Oswald", sans-serif;
+
+  .about_title {
+    font-weight: 500;
+    text-align: center;
+    font-size: 4.2rem;
+    color: #0c223f;
+    line-height: 1;
+    text-transform: uppercase;
+    padding-top: 160px;
+    padding-bottom: 64px;
+    margin: 0;
+  }
+  .container {
+    position: relative;
+    width: 50%;
+    height: auto;
+    padding-bottom: 64px;
+  }
+
+  .img {
+    object-fit: contain;
+    width: 100%;
+  }
+  .discription_container {
+    width: 100%;
+    font-size: 1.6rem;
+    font-family: "Oswald", sans-serif;
+    color: #0c223f;
+    margin: 0;
+    padding-bottom: 32px;
+  }
+  .me_discription_left {
+    padding-right: 15px;
+    padding-bottom: 32px;
+  }
+  .me_discription_right {
+    padding-left: 15px;
+    padding-bottom: 32px;
+  }
+
+  .me_discription_left > p,
+  .me_discription_right > p {
+    font-size: 1.6rem;
+  }
+  .me_discription > p {
+    margin: 0;
+  }
+
+  .resume_button_container {
+    padding-top: 64px;
+    text-align: center;
+    display: block;
+    width: 100%;
+  }
+  .resume_button {
+    position: relative;
+    display: inline-block;
+    background-color: #fcfcfc;
+    padding: 0;
+    z-index: 2;
+    width: 200px;
+    height: 54px;
+    line-height: 4.8rem;
+    font-size: 1.4rem;
+    border: 1px solid #0c223f;
+  }
+
+  .button_text {
+    font-family: "Oswald", sans-serif;
+  }
+
+  .resume_button::after {
+    position: absolute;
+    display: block;
+    content: "";
+    top: 4px;
+    left: 4px;
+    width: 190px;
+    height: 44px;
+    border: 1px solid #0c223f;
+    opacity: 0;
+  }
+
+  .resume_button:hover::after {
+    opacity: 1;
+  }
+
+  .resume_button,
+  .resume_button::before,
+  .resume_button::after {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
+  }
+
+  .bubble06 {
+    font-family: "Fugaz One", sans-serif;
+    margin-top: 20%;
+    color: #fcfcfc;
+    font-size: 2.4rem;
+    position: relative;
+    display: inline-block;
+    height: auto;
+    text-align: left;
+    padding: 25px;
+    background-color: #0c223f;
+    border-radius: 10px;
+    animation: img_box_9955 1s ease infinite alternate;
+    transform-origin: 50% 50%;
+  }
+
+  .bubble06::after {
+    border: solid transparent;
+    content: "";
+    height: 0;
+    width: 0;
+    pointer-events: none;
+    position: absolute;
+    border-color: rgba(12, 34, 63, 0);
+    border-top-width: 10px;
+    border-bottom-width: 10px;
+    border-left-width: 9px;
+    border-right-width: 9px;
+    margin-left: -9px;
+    border-top-color: #0c223f;
+    top: 100%;
+    left: 15%;
+  }
+
+  .m {
+    background: linear-gradient(transparent 70%, #ffc41c 60%);
+  }
+
+  @keyframes img_box_9955 {
+    0% {
+      transform: translateY(0px);
+    }
+    100% {
+      transform: translateY(-6px);
+    }
+  }
+
+  .flex {
+    display: flex;
+  }
+
+  .w_50 {
+    width: 50%;
+  }
+
+  .svg {
+    width: 50px;
+    display: inline-block;
+    padding-bottom: 8px;
+    padding-right: 8px;
+    fill: #0c223f;
+    vertical-align: bottom;
+  }
+
+  .me_discription_title_container {
+    padding-bottom: 16px;
+  }
+
+  .pc-none {
+    display: none;
+  }
+  @media screen and (max-width: 768px) and (min-width: 601px) {
+    .bubble06 {
+      font-size: 1.6rem;
+    }
+
+    .svg {
+      display: block;
+    }
+  }
+  @media screen and (max-width: 600px) {
+    padding-bottom: 64px;
+
+    .about_title {
+      padding-top: 128px;
+    }
+    .flex {
+      display: initial;
+    }
+
+    .container {
+      width: 100%;
+    }
+
+    .bubble06 {
+      position: relative;
+      font-size: 1.6rem;
+      padding: 15px;
+      margin-top: 0;
+      animation: infinite;
+    }
+
+    .bubble06::after {
+      top: -10px;
+      left: 10%;
+      transform: rotate(90deg);
+    }
+
+    .w_50 {
+      width: 100%;
+      text-align: center;
+      padding-bottom: 32px;
+    }
+
+    .container {
+      padding-bottom: 32px;
+    }
+
+    .me_discription_left {
+      padding-right: 0px;
+    }
+    .me_discription_right {
+      padding-left: 0px;
+    }
+    .me_discription_left:first {
+      padding-top: 32px;
+    }
+    .svg {
+      display: block;
+    }
+  }
+}

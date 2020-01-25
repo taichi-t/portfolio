@@ -1,0 +1,42 @@
+html {
+  font-size: 62.5%;
+  background-color: #0c223f;
+}
+
+body {
+  font-family: "Oswald", sans-serif;
+  color: #fcfcfc;
+  font-feature-settings: "palt";
+  letter-spacing: 0.025em;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+a:hover {
+  text-decoration: none;
+  color: inherit;
+}
+
+h3 {
+  font-size: 1.6rem;
+  color: #0c223f;
+  font-weight: bold;
+  text-align: left;
+  padding-bottom: 32px;
+  margin: 0;
+}
+
+h4 {
+  font-size: 1.4rem;
+  color: #0c223f;
+  text-align: left;
+  padding-bottom: 15px;
+  margin: 0;
+}
+
+button:focus {
+  outline: 0;
+}

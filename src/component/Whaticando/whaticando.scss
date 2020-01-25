@@ -1,0 +1,184 @@
+.whaticando {
+  margin: 0 16%;
+  padding-bottom: 80px;
+  font-family: "Oswald", sans-serif;
+
+  .cando_title {
+    font-weight: 500;
+    text-align: center;
+    font-size: 4.2rem;
+    color: #0c223f;
+    line-height: 1;
+    text-transform: uppercase;
+    padding-top: 80px;
+    padding-bottom: 64px;
+    margin: 0;
+  }
+
+  .circle-title {
+    margin: 0;
+  }
+
+  .center {
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  .recharts-wrapper {
+    margin: 0 auto;
+  }
+
+  .relative {
+    width: 100%;
+    height: auto;
+    position: relative;
+  }
+
+  .circle_icon {
+    position: absolute;
+    width: 80px;
+    top: 50%;
+    left: 50%;
+    transform: translateY(-50%) translateX(-50%);
+  }
+
+  .bar_icon_svg {
+    display: inline-block;
+    padding-right: 5px;
+    width: 40px;
+  }
+
+  .bar_icon_name {
+    font-size: 1.6rem;
+    opacity: 0.8;
+  }
+
+  .sub_title {
+    padding: 32px 0;
+  }
+
+  .bar-graph-container {
+    overflow: hidden;
+  }
+
+  .bar-graph-container p {
+    padding: 10px;
+  }
+
+  @-webkit-keyframes slide-left {
+    0% {
+      -webkit-transform: translateX(-200%);
+    }
+    70% {
+      -webkit-transform: translateX(2%);
+    }
+    100% {
+      -webkit-transform: translateX(0);
+    }
+  }
+
+  @keyframes slide-left {
+    0% {
+      -webkit-transform: translateX(-200%);
+    }
+
+    70% {
+      -webkit-transform: translateX(2%);
+    }
+
+    100% {
+      -webkit-transform: translateX(0);
+    }
+  }
+
+  .bar-container {
+    background-color: #aec4e1;
+  }
+
+  .Reactjs {
+    width: 80%;
+    background-color: #0c223f;
+    // animation: slide-left 0.9s ease-in-out 1s both;
+    // -webkit-animation: slide-left 0.9s ease-in-out 1s both;
+    animation-delay: 0.1s;
+    -webkit-animation-delay: 0.1s;
+  }
+
+  .RubyOnRails {
+    width: 60%;
+    background-color: #0c223f;
+    // animation: slide-left 1s ease-in-out 1s both;
+    // -webkit-animation: slide-left 1s ease-in-out 1s both;
+    animation-delay: 0.2s;
+    -webkit-animation-delay: 0.2s;
+  }
+
+  .Bootstrap {
+    width: 80%;
+    background-color: #0c223f;
+    // animation: slide-left 1s ease-in-out 1s both;
+    // -webkit-animation: slide-left 1s ease-in-out 1s both;
+    animation-delay: 0.3s;
+    -webkit-animation-delay: 0.3s;
+  }
+
+  .PhotoShop {
+    width: 75%;
+    background-color: #0c223f;
+    // animation: slide-left 1s ease-in-out 1s both;
+    // -webkit-animation: slide-left 1s ease-in-out 1s both;
+    animation-delay: 0.2s;
+    -webkit-animation-delay: 0.1s;
+  }
+
+  .Illustrator {
+    width: 70%;
+    background-color: #0c223f;
+    // animation: slide-left 1s ease-in-out 1s both;
+    // -webkit-animation: slide-left 1s ease-in-out 1s both;
+    animation-delay: 0.1s;
+    -webkit-animation-delay: 0.2s;
+  }
+
+  .WebDesign {
+    width: 80%;
+    background-color: #0c223f;
+    // animation: slide-left 1s ease-in-out 1s both;
+    // -webkit-animation: slide-left 1s ease-in-out 1s both;
+    animation-delay: 0.1s;
+    -webkit-animation-delay: 0.3s;
+  }
+
+  .isActive {
+    animation: slide-left 0.7s ease-in-out 0.7s both;
+    -webkit-animation: slide-left 0.7s ease-in-out 0.7s both;
+  }
+
+  .bar-title {
+    padding-top: 32px;
+  }
+
+  .bar-list {
+    padding-bottom: 32px;
+  }
+  .bar-list:last-of-type {
+    padding-bottom: 0;
+  }
+
+  .bar {
+    margin-bottom: 0;
+  }
+
+  .bar_inline {
+    display: inline;
+    padding-right: 10px;
+  }
+  @media screen and (max-width: 600px) {
+    .cando_title {
+      padding-top: 64px;
+    }
+    .circle_icon {
+      width: 50px;
+    }
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "name": "Taichi's portfolio",
+  "short_name": "Portfolio",
+  "description": "This is portfplio",
+  "start_url": ".",
+  "display": "standalone",
+  "background_color": "#fff",
+  "theme_color": "#fff",
+
+  "icons": [
+    {
+      "src": "public/favicons/apple-touch-icon-180x180.png",
+      "sizes": "180x180",
+      "type": "image/png"
+    },
+    {
+      "src": "public/favicons/icon-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    }
+  ]
+}
